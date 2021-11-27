@@ -1,0 +1,135 @@
+patch:
+  show_notifications_when: appropriate          # 状态通知，适当，也可设为全开（always）全关（never）
+  style:
+    color_scheme_dark: mritd_dark
+    color_scheme: system_blue                   # 方案命名，不能有空格
+
+  preset_color_schemes:
+    system_blue:
+      name: "系统蓝／System Blue"
+      author: "scomper <scomper@gmail.com>"     # 作者信息
+
+      horizontal: true
+      inline_preedit: true                      # 是否内置码显示，false双行显示
+      candidate_format: "%c\u2005%@"            # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+
+      corner_radius: 5                          # 候选条圆角
+      hilited_corner_radius: 4                  # 高亮圆角
+
+      spacing: 10                           
+      line_spacing: 5                           # 候选字体与底部间距
+
+      border_width: 6                           # 窗口边界宽度，大于圆角半径才生效
+      border_height: 6                          # 窗口边界高度，大于圆角半径才生效
+      border_color_width: 0
+
+
+      font_point: 16                            # 候选文字大小
+      label_font_point: 14                      # 候选编号大小
+      #font_face: "PingFangSC-Regular"           # 候选词编号字体
+      #label_font_face: "SFCompactText-Regular"  # 候选词编号字体
+
+      text_color: 0x424242                      # 拼音行文字颜色
+      back_color: 0xFFFFFF                      # 候选条背景色，24位色值，16进制，BGR顺序
+      label_color: 0x999999                     # 预选栏编号颜色
+      border_color: 0xFFFFFF                    # 边框色
+      candidate_text_color: 0x000000            # 预选项文字颜色
+      comment_text_color: 0x999999              # 拼音等提示文字颜色
+
+      hilited_text_color: 0x999999              # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xF8AA4D              # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xFFFFFF   # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999      # 注解文字高亮
+
+
+    mritd_dark:
+      name: 漠然／mritd dark                    # https://mritd.me/2019/03/23/oh-my-rime/
+      author: mritd <mritd1234@gmail.com>
+
+      horizontal: true                          # 是否水平显示
+      inline_preedit: true                      # 是否内置码显示，false双行显示
+      candidate_format: "%c\u2005%@"            # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+
+      corner_radius: 5                          # 候选条圆角
+      hilited_corner_radius: 4                  # 高亮圆角
+
+      border_width: 6                           # 窗口边界宽度，大于圆角半径才生效
+      border_height: 6                          # 窗口边界高度，大于圆角半径才生效
+      border_color_width: 0
+      
+      spacing: 6                           
+      line_spacing: 5                           # 候选字体与底部间距
+
+      font_point: 16                            # 候选字词大小
+      label_font_point: 14                      # 候选编号大小
+      #font_face: "PingFangSC-Regular"                   # 候选词字体
+      #label_font_face: "SFCompactText-Regular"  # 候选词编号字体
+
+      text_color: 0xdedddd                      # 拼音行文字颜色，24位色值，16进制，BGR顺序
+      label_color: 0x888785                     # 预选栏编号颜色
+      back_color: 0x4b4b4b                      # 候选条背景色
+      border_color: 0x4b4b4b                    # 边框色
+      candidate_text_color: 0xffffff            # 预选项文字颜色
+      comment_text_color: 0xdedddd              # 拼音等提示文字颜色
+
+      hilited_text_color: 0xdedddd              # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0x252320              # 高亮拼音 (需要开启内嵌编码)
+      hilited_candidate_text_color: 0xFFE696    # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xffffff   # 第一候选项编号颜色
+      hilited_candidate_back_color: 0x4b4b4b    # 第一候选项背景背景色
+
+
+    macos_light:
+      name: "Mac仿原生亮色/macos_light"
+      author: "一方"
+
+      horizontal: true                          # 水平排列
+      inline_preedit: true                      # 单行显示，false双行显示
+      candidate_format: "%c\u2005%@"            # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+
+      corner_radius: 5                          # 候选条圆角
+      hilited_corner_radius: 5                  # 高亮圆角
+
+      border_height: 4                          # 窗口上下高度
+      border_width: 4                           # 窗口左右宽度
+      border_color_width: 0                     #输入条边框宽度
+      
+      font_point: 17                            # 候选文字大小
+      label_font_point: 13                      # 候选编号大小
+      font_face: "PingFangSC"                   # 候选词编号字体
+      
+      text_color: 0x424242                      # 拼音行文字颜色
+      label_color: 0x999999                     # 预选栏编号颜色
+      back_color: 0xFFFFFF                      # 候选条背景色，24位色值，16进制，BGR顺序
+      border_color: 0xFFFFFF                    # 边框色
+      candidate_text_color: 0x3c3c3c            # 预选项文字颜色
+      comment_text_color: 0x999999              # 拼音等提示文字颜色
+      
+      hilited_text_color: 0x999999              # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xD75A00              # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xFFFFFF   # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999      # 注解文字高亮
+    
+
+# --- 特定程序定义初始状态的英文输入---
+    app_options:
+      com.google.Chrome:
+        ascii_mode: true
+      com.runningwithcrayons.Alfred:
+        ascii_mode: true
+      com.jetbrains.intellij:
+        ascii_mode: true
+        vim_mode: true
+      com.jetbrains.goland:
+        ascii_mode: true
+        vim_mode: true
+      org.vim.MacVim:
+        no_inline: true
+        ascii_mode: true
+        vim_mode: true
+      com.googlecode.iterm2:
+        ascii_mode: true
+        vim_mode: true
+        
