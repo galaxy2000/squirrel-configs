@@ -103,7 +103,7 @@ translator:
     - xform/.+//                        # 配置：消除所有候选词后的提示码
     
   max_phrase_length: 10                 # 自动生成词的最大长度
-  user_dict: user                       # 用户词典名
+  user_dict: darren_double_flypy        # 用户词典名
   db_class: tabledb                     # 用户词典类型 userdb - 二进制 / tabledb - 人类语言
   disable_user_dict_for_patterns:       # 不需要录入用户词典的编码
     - "^z.*$"
