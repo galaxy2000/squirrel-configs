@@ -10,7 +10,7 @@ schema:
   description: |
     五笔字形 86 极点极爽版，方案由 KyleBing 修改 - 2019年11月08日 10:26
   dependencies:
-  - pinyin_simp
+  - double_pinyin_flypy
 
 switches:
   - name: emoji_suggestion
@@ -81,10 +81,10 @@ translator:
 
 
 reverse_lookup:
-  dictionary: pinyin_simp
+  dictionary: double_pinyin_flypy
   prefix: "z"
   suffix: "'"
-  tips: [拼音]
+  tips: [双拼]
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
@@ -113,3 +113,4 @@ emoji_suggestion:
   opencc_config: emoji.json
   option_name: emoji_suggestion
   tips: all      
+

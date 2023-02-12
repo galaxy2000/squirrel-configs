@@ -88,7 +88,7 @@ speller:
     #- abbrev/^(.).+$/$1/
 
 translator:
-  dictionary: luna_pinyin.extended
+  dictionary: double_pinyin_flypy
   prism: double_pinyin_flypy
 
   enable_charset_filter: true           # 开启字符集过滤
