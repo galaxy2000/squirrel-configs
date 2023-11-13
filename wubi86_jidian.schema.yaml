@@ -10,7 +10,7 @@ schema:
   description: |
     五笔字形 86 极点极爽版，方案由 KyleBing 修改 - 2019年11月08日 10:26
   dependencies:
-  - double_pinyin_flypy
+  - luna_pinyin
 
 switches:
   - name: emoji_suggestion
@@ -81,7 +81,7 @@ translator:
 
 
 reverse_lookup:
-  dictionary: double_pinyin_flypy
+  dictionary: luna_pinyin.extended
   prefix: "z"
   suffix: "'"
   tips: [双拼]
